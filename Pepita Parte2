@@ -1,0 +1,31 @@
+object pepon {
+     var energia = 30
+
+    method decirSuEnergia() {
+        return energia
+    }
+
+    method comer() {
+        energia = energia + (20/2)
+    }
+
+    method volar(distancia) {
+        energia = energia - 20 - (2*distancia)
+    }
+      
+ }
+
+object roque {
+    var pajaro = pepita
+    var cena = 0
+
+    method cambiarDeAve(nombre) {
+        pajaro = nombre
+        cena = 0
+    }
+
+    method alimentar (alimento) {
+        pajaro.comer(alimento)
+        cena = cena + 1 
+    }
+}
